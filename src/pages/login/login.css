@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+  --colorText: #fff;
+  --colorTextSecondHeader: #BCB8B8;
+
+  --defaultFont: 'Open Sans';
+}
+
+header{
+    position: relative;
+}
+
+.ContainerSquare{
+    display: flex;
+    justify-content: center;
+}
+
+.Square{
+    display: flex;
+    width: 80%;
+    height: 36rem;
+    gap: 7rem;
+}
+
+.new-square{    
+    background: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.new-square h2{    
+    font-size: 1.6em;
+    font-family: 'Open Sans';
+    font-weight: bold;
+
+    padding: 1rem 0 0.5rem;
+}
+
+.new-square p{
+    font-size: 1.2em;
+    font-family: Open Sans;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.title{
+    margin-top: -4rem;
+}
+
+#decInferior{
+    position: relative;
+    z-index: -1;
+}
+
+footer{
+    margin-top: -1rem;
+}
+
+.new-square {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease; 
+  }
+  
+  /* Estilo do botão quando estiver selecionado */
+  .new-square.selected {
+    border: 3px solid #3498db;
+
+  }
+
+.forms-login{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.forms-teste{
+    display: flex;
+    flex-direction: column;
+}
+
+.forms-teste input{
+    width: 60rem;
+    height: 6rem;
+
+    margin-top: 2rem;
+
+    font-size: 0.8em;
+    font-family: 'Inter';
+    font-weight: 400;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.forms-teste{
+    font-family: 'Inter';
+    color: black; 
+    font-size: 28px; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+.forms-teste input::placeholder{
+    color: #454444;
+    font-size: 1.1em;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+.forms-teste label{
+    background-color: #fff;
+    width: 8rem;
+    padding-left: 1rem;
+    
+    z-index: 1;
+    position: absolute;
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#labelSenha{
+    margin-top: 11rem;
+}
+
+#EsquecSenha{
+    color: #1861F0;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    text-decoration: underline;
+
+    margin-top: 2rem;
+}
+
+@media (max-width:1600px) {
+    .button-container{
+        margin-left: 0%;
+    }
+}
+
+@media (max-width:1600px) {
+    .button-container{
+        margin-left: 0%;
+    }
+}

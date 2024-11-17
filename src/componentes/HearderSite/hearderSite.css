@@ -1,0 +1,568 @@
+/* Estilo do modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .modal-content h1 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-content p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .modal-content input[type="text"],
+  .modal-content select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff7d22; /* Cor laranja das bordas */
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content input[type="text"]::placeholder {
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .modal-content select {
+    appearance: none;
+    background-color: transparent;
+  }
+  
+  .modal-content .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .modal-content button[type="submit"] {
+    background-color: #28a745; /* Verde para o botão Salvar */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-content button[type="button"] {
+    background-color: #ddd;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilo do botão de fechar */
+  .modal-content .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+  }
+  
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adicionar-Notificacao button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.headerSiteMenu{
+    display: grid;
+    grid-template-columns: 20fr 10fr;
+}
+/* Perfil e layout básico */
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.infor-perfil {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+#nivelAcesso {
+    color: #BCB8B8;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+span:first-child {
+    margin-right: 1rem;
+}
+
+/* Estilo da Janela de Perfil */
+.JanelaPerfil {
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: dropdown-animation 0.3s ease-out;
+    z-index: 10; 
+    top: 100%;
+    transform: translateX(-40px); 
+    padding: 10px 0;
+}
+
+.JanelaPerfil::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 40px; 
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+.JanelaPerfil ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+.JanelaPerfil li {
+    padding: 10px 20px;
+   
+    cursor: pointer;
+
+    font-family: 'Open Sans', Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.icons-janela{
+    display: flex;
+
+    border-bottom: 1px solid #df9800;
+    padding-bottom: 1rem;
+    margin: -1rem 2rem 2rem 2rem
+}
+
+.icons-janela img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+.notificacao-icon{
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+}
+
+.notificacao-content{
+    font-family: "Open Sans";
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-break: break-all;
+}
+
+.notificacao-dropdown hr{
+    width: 90%;
+    margin: 0 1rem;
+}
+
+.notificacao-dropdown{
+    color: #000;
+    position: absolute;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: dropdown-animation 0.3s ease-out;
+    z-index: 10; 
+    top: 100%;
+    transform: translateX(-10px); 
+    padding: 10px 0;
+}
+
+.notificacao-dropdown::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 20px; 
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.notificacao-header{
+    color: #000;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+#Legenda-Notificacao{
+    margin: 1rem;
+    color: #141414;
+
+    
+}
+
+.legenda-Notificacao{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+}
+
+.notificacao-Cor-Import{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #FFB5B5;
+    margin-right: -1rem;
+}
+
+.notificacao-Cor-NaoImport{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: #B5DFFF;
+    margin-right: -1rem;
+}
+
+.adicionar-Notificacao button{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: #ABA3A3;
+    margin-right: 1rem;
+}
+
+/* Estilos para o menu lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: -370px; 
+    width: 370px;
+    height: 100%;
+    background-color: rgba(6, 39, 61, 0.952);
+    padding-top: 50px;
+    transition: right 0.3s ease-in-out; 
+    z-index: 2;
+    color: #fff;
+}
+
+.Topico-Menu{
+    display: flex;
+
+}
+
+.Topico-Menu::before{
+    content: "▶";
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: #df9800;
+}
+
+.Menu-lateral-Margin{
+    padding: 4rem 0 0 0;
+}
+
+.Opcaoes-Menu-Lateral{
+    margin-left: 3rem;
+}
+
+.menu-lateral.open {
+    right: 0; 
+}
+
+.menu-lateral li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    
+}
+
+.menu-lateral li {
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: 'Open Sans', Helvetica;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: 4rem;
+    color: white;
+
+    float: right;
+    margin-top: -4rem;
+}
+
+.Icon-Opcoes-Menu{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.Icon-Opcoes-Menu li:hover{
+    color: #000;
+}
+
+.Icon-Opcoes-Menu:hover{
+    background-color: #fff;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.Icon-Opcoes-Menu{
+    padding: 0.4rem;
+}
+
+.Icon-Opcoes-Menu img{
+    width: 3.2rem;
+    height: 3rem;
+}
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 5;
+}
+
+/* lista de notificação */
+
+.notificacao-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .notificacao-item {
+
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+
+    margin: 10px 0;
+    padding: 0px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .Notificacao-informacao{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0.5rem 0;
+  }
+
+  .Notificacao-informacao button{
+    background-color: transparent;
+    border: none;
+    float: right;  
+    margin-left: 12rem;
+}
+  
+  .notificacao-item strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .card-notificacao{
+    display: flex;
+    flex-direction: column;
+  }
+  .importancia{
+    width: 4rem;
+    margin-right: 1rem;
+    padding: 0%;
+  }
+  
+   .importante {
+    background-color: #FFB5B5; 
+  }
+  
+  .nao-importante {
+    background-color: #B5DFFF; 
+  }
+  
+  .notificacao-dados{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .importancia{
+    display: flex;
+    flex-direction: column;
+  }
+  .notificacao-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Garante a quebra dentro dos parágrafos */
+    overflow-wrap: break-word;
+  }
+  
+  .notificacao-item small {
+    display: block;
+    font-size: 0.85em;
+    color: #999;
+  }
+  
+
+
+
+
+
+
+
+  .delete-btn {
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+
+/* Animação de dropdown */
+@keyframes dropdown-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Overlay para escurecer o fundo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escurecido */
+    z-index: 5; /* Um valor menor que o dropdown para não sobrepor */
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
