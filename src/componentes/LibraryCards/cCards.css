@@ -1,0 +1,77 @@
+.card{
+    display: grid;
+    flex-direction: row;
+
+    margin-top: 6rem;
+    margin-left: 4rem;
+    border: 1px #9A9A9A solid;
+    box-shadow: 0px 3px 10px rgba(35.06, 35.06, 35.06, 0.64);
+    width: 333px;
+    height: 548px;
+}
+
+.teste{
+    position: relative;
+}
+
+#fundo{
+    position: absolute;
+    z-index: -1;
+
+}
+
+#capa{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 170px;
+    height: 248px;
+    padding: -10rem 3rem;
+
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.inforCard{
+    margin-top: 16rem;
+}
+
+.bodyCard h5{
+    color: black;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    word-wrap: break-word;
+    padding: 11px 20px 9px;
+} 
+
+.bodyCard p{
+    color: #777070;
+    font-size: 13px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    word-wrap: break-word;
+    padding: 11px 20px 3px;
+}
+
+.footerCard button{
+    margin-top: 2rem;
+    float: right;
+    margin-right: 2rem;
+    width: 10rem;
+    height: 2.43rem;
+    border: none;
+    background-color: #FF9900;
+
+
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 800;
+    word-wrap: break-word
+}
+
+.footerCard button:hover{
+    background-color: #f8ac3a;
+}

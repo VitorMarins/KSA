@@ -4,7 +4,10 @@ import {
   TurmaDecoracaoSuperior,
   adicionar,
   HeaderSite,
-  Footer
+  Footer,
+  fundoImg,
+  CardsClasse,
+  ImgProfessor
 } from '../../imports/imports';
 import './turmas.css';
 
@@ -68,7 +71,7 @@ function Turma() {
         
         <div className="turmas-header">
           <h2 className="turmas-title">
-            <span className="turmas-icon">▶</span> Turmas
+            Turmas
               </h2>
 
           <button className="add-turma-button" onClick={openModal}><img src={adicionar} alt='adicionar'/></button>
@@ -79,26 +82,86 @@ function Turma() {
 
  
   <section className='turmas'>
+        <CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
+
+<CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
+
+<CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
+
+<CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
 
 
-          <div className="turma-card">
-            <div className="turma-card-header">
-              <div className=''></div>
-              <div>
-                <h3>Turma: 1 Ano</h3>
-                <p>Turno: Tarde</p>
-              </div>
-            </div>
-            <div className="turma-card-content">
-              <h4>Ux Design</h4>
-              <p>23/09 - Arquivo em PDF</p>
-            </div>
-            <div className="turma-card-footer">
-              <p>40 pessoas</p>
-              <p>Professor: Marcos Silva</p>
-            </div>
-          </div>  
-         
+<CardsClasse  
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
+
+<CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
+
+<CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
+
+        <CardsClasse 
+        imgFundo={fundoImg}
+        imgProfessor={ImgProfessor} 
+        turma= "1 ano"
+        turno= "Tarde"
+        materia= "Matemática"
+        professor= "Marcos Roberto"
+        quantidadeAlunos="40"
+        />
     </section>
 
       {showModal && (
@@ -137,7 +200,7 @@ function Turma() {
         </div>
       )}
 
-      <Footer />
+      <Footer id="footer-Turmas"/>
     </main>
   );
 }

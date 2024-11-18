@@ -35,9 +35,10 @@
 
 }
 
-.turmas-icon {
-  color: orange;
-  margin-right: 8px;
+.turmas-title::before{
+  content: "▶ ";
+  margin-right: 1rem;
+  color: #FF9900;
 }
 
 /* Botão de adicionar turma */
@@ -57,21 +58,18 @@
   margin-top: -5rem;
 }
 
+#footer-Turmas{
+  margin-top: 10rem;
+}
+
 .turmas{
-  margin-left: 4rem;
-  width: 70rem;
   display: grid;
-  grid-template-columns: 10fr 10fr 10fr 10fr;
-  gap: 5rem;
-  margin-top: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  column-gap: 200px;
+  width: 90%;
 
+
+  margin-left: 2rem;
+  margin-top: 5rem;
 }
 
-/* card turma  */
-.turma-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  padding: 20px;
-  width: calc(33.333% - 20px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}

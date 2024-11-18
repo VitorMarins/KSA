@@ -1,0 +1,35 @@
+#biblioteca-title{
+    margin-top: 6rem;
+}
+
+#biblioteca-title::before{
+  content: "▶ ";
+  margin-right: 1rem;
+  color: #FF9900;
+}
+
+.svgBiblioteca{
+    margin-right: 1rem;
+}
+
+.title-Books{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+
+    color: #000;
+    font-family: "Open Sans";
+    line-height: 1.4rem;
+    font-weight: 100;
+}
+
+.cardsBooks{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 180px;
+    width: 90%;
+}
+
+.biblioteca Footer{
+    margin-top: 8rem;
+}
