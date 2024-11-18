@@ -53,6 +53,13 @@ import Lixeira from '../assets/Header/lixeira.png';
 // Imagens das Turmas
 import TurmaDecoracaoSuperior from '../assets/Classes/decoraçãoRedonda.png';
 import adicionar from '../assets/Classes/AdicionarTurma.png';
+import quantidadeAlunosIcon from '../assets/Classes/IconColaboradores.png';
+import fundoImg from '../assets/Classes/turmaTeste/YOUTZ-MATEMATICA-ENEM.jpg';
+import ImgProfessor from '../assets/Classes/turmaTeste/12161378-m.jpg';
+
+// Imagens Biblioteca
+import fundoCards from '../assets/Library/Group 63.png'
+import capaLivro from '../assets/Library/71ATk7TzxQL._AC_UF1000,1000_QL80_.jpg'
 
 // Componentes
 import HeaderHome from '../componentes/Header/cHeader';
@@ -62,10 +69,17 @@ import Mapa from '../componentes/Mapa/cMapa';
 import Footer from '../componentes/Footer/cFooter';
 import TitleRegistrationLogin from '../componentes/TitleRegistrationLogin/cTitle';
 import Button from '../componentes/Button/cButton';
+import Cards from '../componentes/LibraryCards/cCards'
+import CardsClasse from '../componentes/ClassesCard/cClasseCard'
+
 // import Notificacao from '../componentes/notificacao/notificacao';
+
+
+
 
 export {
   // Componentes principais da aplicação
+  Cards,                // componente de cards de livros
   CourseCard,           // Componente de cartão de curso
   HeaderHome,           // Componente de cabeçalho para a Home
   HeaderSite,           // Componente de cabeçalho para o site
@@ -74,6 +88,7 @@ export {
   TitleRegistrationLogin,   // Componente de título para cadastro e login
   Button,               // Componente de botão para cadastro e login
   // Notificacao,          // Componente de notificação
+  CardsClasse,
 
   // Imagens do cabeçalho - visíveis em todas as telas
   logo,                 // Logotipo do Senac
@@ -127,5 +142,12 @@ export {
 
   // Imagens das turmas
   TurmaDecoracaoSuperior, // Imagem decorativa superior para a seção de turmas
-  adicionar               // Ícone para adicionar uma nova turma
+  adicionar,              // Ícone para adicionar uma nova turma
+  quantidadeAlunosIcon,   // Ícone sobre a quantidade de alunos         
+  fundoImg,
+  ImgProfessor,
+
+  //Biblioteca
+  fundoCards,
+  capaLivro
 };
