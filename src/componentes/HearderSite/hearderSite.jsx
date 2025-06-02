@@ -282,7 +282,7 @@ const deleteNotificacao = async (id) => {
           </div>
           <div className='Icon-Opcoes-Menu'>
             <img src={IconTurmas} alt='turmas-icon' />
-            <a href='#a'><li>Turmas</li></a>
+            <a href='/turma'><li>Turmas</li></a>
           </div>
         </section>
 

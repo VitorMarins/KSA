@@ -92,76 +92,7 @@ function Turma() {
         quantidadeAlunos="40"
         />
 
-<CardsClasse 
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
 
-<CardsClasse 
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
-
-<CardsClasse 
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
-
-
-<CardsClasse  
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
-
-<CardsClasse 
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
-
-<CardsClasse 
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
-
-        <CardsClasse 
-        imgFundo={fundoImg}
-        imgProfessor={ImgProfessor} 
-        turma= "1 ano"
-        turno= "Tarde"
-        materia= "Matemática"
-        professor= "Marcos Roberto"
-        quantidadeAlunos="40"
-        />
     </section>
 
       {showModal && (
