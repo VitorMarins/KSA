@@ -9,10 +9,10 @@ import {
   professor,
   aluno,
   coordenador
-} from '../../imports/imports'; 
+} from '../../imports/imports';
+import { useNavigate } from 'react-router-dom';
 
 import './login.css';
-
 
 function Login() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -20,73 +20,90 @@ function Login() {
   const [showLogin2, setShowLogin2] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleCardClick = (card) => {
     setSelectedCard(card);
     setErrorMessage('');
   };
 
-  const handleNextButtonClick = () => {
+  const handleNextButtonClick = (e) => {
+    e.preventDefault();
     if (!selectedCard) {
       setErrorMessage('Por favor, selecione um perfil para continuar.');
     } else {
       setShowLogin2(true); 
+      setErrorMessage('');
     }
   };
 
   const handleLogin = async (e) => {
-    e.preventDefault(); // Previne o comportamento padrão do formulário
-    const response = await fetch('http://localhost:5000/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-    });
-    
-    const data = await response.json();
+    e.preventDefault();
+    try {
+      const response = await fetch('https://back-end-mediotec.onrender.com/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
 
-    if (response.ok) {
-      // Redirecionar para a tela de turmas
-      console.log('Login bem-sucedido:', data.user);
-      // Você pode usar o React Router para redirecionar para outra rota
-    } else {
-      setErrorMessage(data.message);
+      if (response.ok) {
+        // Redirecionar para a tela de turmas
+        navigate('/turma');
+      } else {
+        setErrorMessage(data.message || 'Erro ao fazer login.');
+      }
+    } catch (error) {
+      setErrorMessage('Erro de conexão.');
     }
   };
 
   if (showLogin2) {
     return (
-      <form onSubmit={handleLogin}>
-      <HeaderHome />
-      <img src={triangulo} alt='decoracao' id='decInferior' />
-      <TitleRegistrationLogin 
-        title="Olá, Seja bem-vindo!!"
-        paragrafo="preencha os dados abaixo para realizar seu login"
-      />
+      <div>
+        <HeaderHome />
+        <img src={triangulo} alt='decoracao' id='decInferior' />
+        <TitleRegistrationLogin 
+          title="Olá, Seja bem-vindo!!"
+          paragrafo="preencha os dados abaixo para realizar seu login"
+        />
 
-      <form action=''>
-        <section className='forms-login'>
+        <form onSubmit={handleLogin}>
+          <section className='forms-login'>
+            <div className='forms-teste'>
+              <label htmlFor='email'>E-mail:</label>
+              <input
+                type='email'
+                id='email'
+                placeholder="Digite seu email"
+                required
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+              />
+              <br />
+              <label htmlFor='password' id='labelSenha'>Senha:</label>
+              <input
+                type='password'
+                id='password'
+                placeholder="Digite sua senha"
+                required
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+              />
 
-          <div className='forms-teste'>
-          <label>E-mail:</label>
-          <input type='email' id='email'  placeholder="Digite seu email" required></input>
-          <br />
-          <label id='labelSenha'>Senha:</label>
-          <input type='password' id='password' placeholder="Digite sua senha" required></input>
+              <a href='#a' id='EsquecSenha'>Esqueceu a senha?</a>
 
-          <a href='#a' id='EsquecSenha'>Esqueceu a senha?</a>
+              <Button title="Finalizar" type="submit" />
+            </div>
+          </section>
+          {errorMessage && <p className="error-message">{errorMessage}</p>}
+        </form>
 
-          
-          <Button title="Finalizar"/>
-          </div>
-        </section>
-      </form>
-
-      <img src={decoracaoInfer} alt='decoracao' id='decInferior' />
-      <Footer />
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
-      </form>
+        <img src={decoracaoInfer} alt='decoracao' id='decInferior' />
+        <Footer />
+      </div>
     );
   }
 
