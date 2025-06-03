@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import { 
   TurmaDecoracaoSuperior,
   adicionar,
@@ -82,6 +82,9 @@ function Turma() {
 
  
   <section className='turmas'>
+    
+
+     <Link to="/boletim" style={{ textDecoration: 'none' }}>
         <CardsClasse 
         imgFundo={fundoImg}
         imgProfessor={ImgProfessor} 
@@ -91,7 +94,7 @@ function Turma() {
         professor= "Marcos Roberto"
         quantidadeAlunos="40"
         />
-
+</Link>
 
     </section>
 
