@@ -19,7 +19,7 @@ function Login() {
   const [errorMessage, setErrorMessage] = useState('');
   const [showLogin2, setShowLogin2] = useState(false);
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [senha, setSenha] = useState('');
   const navigate = useNavigate();
 
   const handleCardClick = (card) => {
@@ -45,7 +45,7 @@ function Login() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, senha }),
       });
       const data = await response.json();
 
@@ -83,14 +83,14 @@ function Login() {
                 onChange={e => setEmail(e.target.value)}
               />
               <br />
-              <label htmlFor='password' id='labelSenha'>Senha:</label>
+              <label htmlFor='senha' id='labelSenha'>Senha:</label>
               <input
                 type='password'
-                id='password'
+                id='senha'
                 placeholder="Digite sua senha"
                 required
-                value={password}
-                onChange={e => setPassword(e.target.value)}
+                value={senha}
+                onChange={e => setSenha(e.target.value)}
               />
 
               <a href='#a' id='EsquecSenha'>Esqueceu a senha?</a>
