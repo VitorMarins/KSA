@@ -84,7 +84,7 @@ function Turma() {
   <section className='turmas'>
     
 
-     <Link to="/boletim" style={{ textDecoration: 'none' }}>
+     <Link to="/turma" style={{ textDecoration: 'none' }}>
         <CardsClasse 
         imgFundo={fundoImg}
         imgProfessor={ImgProfessor} 

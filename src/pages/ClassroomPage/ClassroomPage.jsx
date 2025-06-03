@@ -8,8 +8,8 @@ import {
 const tabs = ["Mural", "Atividades", "Pessoas"];
 
 const posts = [
-  { id: 1, author: "Professor João", content: "Bem-vindos à turma!", date: "02/06/2025" },
-  { id: 2, author: "Professor João", content: "Entreguem a atividade até sexta!", date: "01/06/2025" },
+  { id: 1, author: "Professor Marcos Roberto", content: "Bem-vindos à turma!", date: "02/06/2025" },
+  { id: 2, author: "Professor Marcos Roberto", content: "Entreguem a atividade até sexta!", date: "01/06/2025" },
 ];
 
 export default function ClassroomPage() {

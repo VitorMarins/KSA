@@ -51,7 +51,7 @@ function Login() {
 
       if (response.ok) {
         // Redirecionar para a tela de turmas
-        navigate('/turma');
+        navigate('/turmas');
       } else {
         setErrorMessage(data.message || 'Erro ao fazer login.');
       }
